@@ -3,6 +3,7 @@ import time
 
 
 class Dashboard(BasePage):
+<<<<<<< HEAD
     expected_title = 'Scouts panel'
     dashboard_url = 'https://scouts-test.futbolkolektyw.pl'
 
