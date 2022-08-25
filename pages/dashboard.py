@@ -16,7 +16,6 @@ class Dashboard(BasePage):
     add_player_button_xpath = "//span[text()='Add player']"
     shortcuts_xpath = "//h2[text()='Shortcuts']"
     dev_team_contact_label_xpath = "//span[contains(text(),'Dev team contact')]"
-    dev_team_contact_button_xpath = "//span[contain"
     def title_of_page(self):
-        time.sleep(5)
+        self.wait_for_element_to_be_clickable(self. add_player_button_xpath)
         assert self.get_page_title(self.dashboard_url) == self.expected_title
