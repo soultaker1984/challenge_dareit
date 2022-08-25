@@ -9,7 +9,7 @@ class Dashboard(BasePage):
     scouts_panel_header_xpath = "//h6[text()='Scouts Panel']"
     main_page_xpath = "//*[text()='Main page']"
     players_xpath = "//*[text()='Players']"
-    Polski_xpath = "//*[text()='Polski']"
+    polski_xpath = "//*[text()='Polski']"
     sign_out_xpath = "//*[text()='Sign out']"
     players_count_words_xpath = "//div[text()='Players count']"
     number_of_players_xpath = "//*[text()='10']"
