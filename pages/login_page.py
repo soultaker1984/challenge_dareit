@@ -9,6 +9,8 @@ class LoginPage(BasePage):
     expected_title = "Scouts panel - sign in"
     header_text_xpath = "//h5[text()='Scouts Panel']"
     header_text = 'Scouts Panel'
+    select_bar_xpath = '//div[contains(@class, "MuiSelect-root")]'
+    poland_language_switch_xpath = "//li[@data-value='pl']"
 
 
     def type_in_email(self, email):
@@ -21,3 +23,5 @@ class LoginPage(BasePage):
         assert self.get_page_title(self.login_url) == self.expected_title
     def check_the_text_of_the_box(self):
         self.assert_element_text(self.driver, self.header_text_xpath, self.header_text)
+    def switch_language(self):
+        self.click_on_the_element(self.select_bar_xpath), self.click_on_the_element(self.poland_language_switch_xpath)
